@@ -37,7 +37,7 @@ public class CalculatorController {
     }
 
     @GetMapping("/divide")
-    public String divide(@RequestParam int num1, @RequestParam int num2) {
+    public String divide(@RequestParam int num1, @RequestParam int num2) throws Exception {
         if (num2 == 0) {
             return "Деление на 0 невозможно";
         }
